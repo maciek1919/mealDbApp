@@ -16,18 +16,18 @@ public class MainApp extends JFrame {
 
 
     public MainApp() {
-        LoginGUI l = new LoginGUI();
+
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setContentPane(mainPanel);
         this.pack();
-        System.out.println(l.id);
+
 
     }
 
     private void createUIComponents() throws SQLException {
         // TODO: place custom component creation code here
-        LoginGUI l = new LoginGUI();
-        TableModel model = new mealTable(arrayFromDb.getAllMeals(l.id));
+
+        TableModel model = new mealTable(arrayFromDb.getAllMeals(LoginGUI.id));
         table1 = new JTable(model);
         table1.setAutoCreateRowSorter(true);
         table1.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);

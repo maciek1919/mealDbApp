@@ -5,6 +5,7 @@ import java.awt.event.ActionListener;
 import java.sql.SQLException;
 
 public class LoginGUI extends JFrame implements ActionListener {
+    public static int id;
     private JTextField textField1;
     private JPanel mainPanel;
     private JPasswordField passwordField1;
@@ -13,7 +14,7 @@ public class LoginGUI extends JFrame implements ActionListener {
     private JButton cancelButton;
     private JButton loginButton;
     private JButton clickHereToCreateButton;
-    public int id = 0;
+
 
 
 
